@@ -1,0 +1,13 @@
+.b-hero {
+	.__img img {
+		max-height: 800px;
+		object-position: top;
+	}
+	h3 {
+		margin-bottom:16px;
+	}
+	hr {
+		margin: 16px 0;
+		color:var(--color-primary-600);
+	}
+}
