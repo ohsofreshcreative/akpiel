@@ -9,19 +9,19 @@ import path from 'path'
 
 export default defineConfig(({ command }) => ({
   server: {
-    host: 'ranyprzewlekle.local',
+    host: 'akpiel.local',
     port: 6100,
     strictPort: true,
     cors: true,
     hmr: {
       protocol: 'ws',
-      host: 'ranyprzewlekle.local',
+      host: 'akpiel.local',
       port: 6100,
     },
   },
 
   base: command === 'build'
-    ? '/wp-content/themes/ranyprzewlekle/public/build/'
+    ? '/wp-content/themes/akpiel/public/build/'
     : '/build/',
 
   plugins: [

@@ -1715,6 +1715,51 @@
           "size": "8rem"
         }
       ]
+    },
+    "border": {
+      "radius": true,
+      "radiusSizes": [
+        {
+          "name": "xs",
+          "slug": "xs",
+          "size": ".125rem"
+        },
+        {
+          "name": "sm",
+          "slug": "sm",
+          "size": ".25rem"
+        },
+        {
+          "name": "md",
+          "slug": "md",
+          "size": ".375rem"
+        },
+        {
+          "name": "lg",
+          "slug": "lg",
+          "size": ".5rem"
+        },
+        {
+          "name": "xl",
+          "slug": "xl",
+          "size": ".75rem"
+        },
+        {
+          "name": "2xl",
+          "slug": "2xl",
+          "size": "1rem"
+        },
+        {
+          "name": "3xl",
+          "slug": "3xl",
+          "size": "1.5rem"
+        },
+        {
+          "name": "4xl",
+          "slug": "4xl",
+          "size": "2rem"
+        }
+      ]
     }
   }
 }

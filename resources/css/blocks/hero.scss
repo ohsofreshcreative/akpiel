@@ -3,11 +3,26 @@
 		max-height: 800px;
 		object-position: top;
 	}
+
 	h3 {
-		margin-bottom:16px;
+		margin-bottom: 16px;
 	}
+
 	hr {
 		margin: 16px 0;
-		color:var(--color-primary-600);
+		color: var(--color-primary-600);
+	}
+
+	.__txt {
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			color: #FFF !important;
+		}
 	}
 }

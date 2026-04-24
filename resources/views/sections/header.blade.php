@@ -8,9 +8,9 @@ use App\Walkers\MegaMenuWalker;
 
 	<!-- Desktop Header -->
 	<div class="items-center justify-between hidden h-full py-4 md:px-4 lg:px-12 mx-auto lg:flex">
-		<a class="brand w-1/6 min-w-25" href="{{ home_url('/') }}">
+		<a class="brand max-w-1/6 min-w-25" href="{{ home_url('/') }}">
 			@if ($logo)
-			<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="relative w-auto h-14">
+			<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="relative w-auto h-auto !max-h-14">
 			@else
 			<span class="text-xl font-bold">{{ $siteName }}</span>
 			@endif
@@ -27,7 +27,7 @@ use App\Walkers\MegaMenuWalker;
 				]) !!}
 			</nav>
 			@endif
-			<a class="__menu-btn bg-primary-600 font-semibold text-sm rounded-full whitespace-nowrap py-2 px-2 lg:px-4 ml-2" href="#zarejestruj-sie">Zarejestruj się</a>
+			<a class="__menu-btn bg-primary-600 font-semibold !text-white text-sm rounded-full whitespace-nowrap py-2 px-2 lg:px-4 ml-2" href="#zarejestruj-sie">Zarejestruj się</a>
 		</div>
 	</div>
 
@@ -96,7 +96,7 @@ use App\Walkers\MegaMenuWalker;
 			@endif
 
 			<div class="mt-8">
-				<a href="#zarejestruj-sie" class="__menu-btn bg-primary-600 !text-xl rounded-full whitespace-nowrap py-6 px-8 ml-2">
+				<a href="#zarejestruj-sie" class="__menu-btn bg-primary-600 !text-white !text-xl rounded-full whitespace-nowrap py-6 px-8 ml-2">
 					Zarejestruj się
 				</a>
 			</div>
