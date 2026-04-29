@@ -17,7 +17,7 @@ $sectionClass .= $nomt ? ' !mt-0' : '';
         <div class="__col grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-20 mt-30 md:mt-0 ">
 
             <div class="__hero order2 lg:py-10">
-                <h1 data-gsap-element="header" class="text-white">{{ $g_hero['title'] }}</h1>
+                <h2 data-gsap-element="header" class="!text-h3 text-white">{{ $g_hero['title'] }}</h2>
 
                 <div data-gsap-element="txt" class="__txt mt-4 !text-white">
                     {!! $g_hero['txt'] !!}

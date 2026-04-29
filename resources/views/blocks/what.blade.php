@@ -9,9 +9,9 @@ $sectionClass .= $nomt ? ' !mt-0' : '';
 
 	<div class="bg-gradient-light rounded-4xl overflow-hidden mx-6 sm:mx-6 md:mx-10 lg:mx-20">
 
-		<div class="__wrapper c-main text-center relative z-20 py-40">
+		<div class="__wrapper c-main relative z-20 py-30">
 
-			<div class="relative w-full z-10 md:w-1/2 mx-auto">
+			<div class="relative w-full z-10 md:w-2/3 mx-auto">
 				@if ($what['header'])
 				<h3 data-gsap-element="header" class=" m-header !text-white">{{ $what['header'] }}</h3>
 				@endif

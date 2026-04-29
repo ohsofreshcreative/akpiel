@@ -44,7 +44,7 @@
 				@if (!empty($g_content['button']))
 				<x-button
 					:href="$g_content['button']['url']"
-					variant="primary"
+					variant="white"
 					class="mt-6"
 					data-gsap-element="btn">
 					{{ $g_content['button']['title'] }}
