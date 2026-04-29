@@ -343,12 +343,8 @@ body {
 		color: #fff;
 	}
 
-	.btn-primary {
-		background: var(--color-secondary);
-	}
-
-	.btn-primary:hover {
-		background: var(--color-secondary-hover);
+	a.btn {
+		color: unset !important;
 	}
 }
 
