@@ -27,7 +27,7 @@ use App\Walkers\MegaMenuWalker;
 				]) !!}
 			</nav>
 			@endif
-			<a class="__menu-btn bg-primary-600 font-semibold !text-white text-sm rounded-full whitespace-nowrap py-2 px-2 lg:px-4 ml-2" href="#zarejestruj-sie">Zarejestruj się</a>
+			<!-- <a class="__menu-btn bg-primary-600 font-semibold !text-white text-sm rounded-full whitespace-nowrap py-2 px-2 lg:px-4 ml-2" href="#zarejestruj-sie">Zarejestruj się</a> -->
 		</div>
 	</div>
 
@@ -95,11 +95,11 @@ use App\Walkers\MegaMenuWalker;
 			</nav>
 			@endif
 
-			<div class="mt-8">
+		<!-- 	<div class="mt-8">
 				<a href="#zarejestruj-sie" class="__menu-btn bg-primary-600 !text-white !text-xl rounded-full whitespace-nowrap py-6 px-8 ml-2">
 					Zarejestruj się
 				</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </header>

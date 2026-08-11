@@ -709,6 +709,21 @@ h6,
 	color: #fff;
 }
 
+.btn-register {
+	height:48px !important;
+	background-color: var(--color-primary);
+	border-color: var(--color-secondary);
+	color: #fff;
+	padding: 0px 24px;
+	border-radius:99px;
+}
+
+.btn-register:hover {
+	background-color: var(--color-primary-hover);
+	border-color: var(--color-primary-hover);
+	color:  #FFF;
+}
+
 .pointer {
 	cursor: pointer;
 }

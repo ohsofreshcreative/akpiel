@@ -2,7 +2,7 @@
 
 namespace App\Walkers;
 
-class MegaMenuWalker extends \Walker_Nav_Menu
+class MegaMenuWalker extends DropdownWalker
 {
     private $is_megamenu = false;
     private $level_2_items_buffer = '';
@@ -18,9 +18,7 @@ class MegaMenuWalker extends \Walker_Nav_Menu
             $output .= '<ul class="dropdown-menu megamenu megamenu-content megamenu-initialized">';
             // Nie dodajemy nic więcej, bo całą strukturę zbudujemy w end_lvl
         } else {
-            // Standardowe zachowanie dla zwykłych podmenu
-            $indent = str_repeat("\t", $depth);
-            $output .= "\n$indent<ul class=\"sub-menu\">\n";
+            parent::start_lvl($output, $depth, $args);
         }
     }
 
@@ -87,9 +85,7 @@ class MegaMenuWalker extends \Walker_Nav_Menu
             $this->level_2_items_buffer = '';
             $this->level_3_items_buffer = [];
         } else {
-            // Standardowe zachowanie
-            $indent = str_repeat("\t", $depth);
-            $output .= "$indent</ul>\n";
+            parent::end_lvl($output, $depth, $args);
         }
     }
 
