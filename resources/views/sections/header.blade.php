@@ -16,7 +16,7 @@ use App\Walkers\MegaMenuWalker;
 				<span class="text-xl font-bold">{{ $siteName }}</span>
 				@endif
 			</a>
-			<img class="relative max-w-35 min-w-25" src="http://akpiel.local/wp-content/uploads/2026/08/DOIPIP_logo_35lat_przejzroczyste_tlo.png" />
+			<img class="relative max-w-35 min-w-25" src="/wp-content/uploads/2026/08/DOIPIP_logo_35lat_przejzroczyste_tlo.png" />
 		</div>
 		@if (has_nav_menu('primary_navigation'))
 		<div class="flex items-center gap-x-6">
