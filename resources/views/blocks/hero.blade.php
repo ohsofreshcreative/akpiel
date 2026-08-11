@@ -46,6 +46,7 @@ $sectionClass .= $nomt ? ' !mt-0' : '';
                         :href="$g_hero['button1']['url']"
                         variant="white"
                         class=""
+                        :target="!empty($g_hero['button1']['target']) ? $g_hero['button1']['target'] : '_self'"
                         data-gsap-element="btn">
                         {{ $g_hero['button1']['title'] }}
                     </x-button>
@@ -55,6 +56,7 @@ $sectionClass .= $nomt ? ' !mt-0' : '';
                         :href="$g_hero['button2']['url']"
                         variant="primary"
                         class=""
+                        :target="!empty($g_hero['button2']['target']) ? $g_hero['button2']['target'] : '_self'"
                         data-gsap-element="btn">
                         {{ $g_hero['button2']['title'] }}
                     </x-button>

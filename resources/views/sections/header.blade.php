@@ -8,13 +8,16 @@ use App\Walkers\MegaMenuWalker;
 
 	<!-- Desktop Header -->
 	<div class="items-center justify-between hidden h-full py-4 md:px-4 lg:px-12 mx-auto lg:flex">
-		<a class="brand max-w-1/6 min-w-25" href="{{ home_url('/') }}">
-			@if ($logo)
-			<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="relative w-auto h-auto !max-h-14">
-			@else
-			<span class="text-xl font-bold">{{ $siteName }}</span>
-			@endif
-		</a>
+		<div class="flex gap-2 items-center">
+			<a class="brand max-w-45 min-w-25" href="{{ home_url('/') }}">
+				@if ($logo)
+				<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="relative w-auto h-auto !max-h-14">
+				@else
+				<span class="text-xl font-bold">{{ $siteName }}</span>
+				@endif
+			</a>
+			<img class="relative max-w-35 min-w-25" src="http://akpiel.local/wp-content/uploads/2026/08/DOIPIP_logo_35lat_przejzroczyste_tlo.png" />
+		</div>
 		@if (has_nav_menu('primary_navigation'))
 		<div class="flex items-center gap-x-6">
 			<nav class="ml-4 nav-primary" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
@@ -83,7 +86,7 @@ use App\Walkers\MegaMenuWalker;
 			</div>
 
 			@if (has_nav_menu('primary_navigation'))
-		            <nav @click="mobileOpen = false" class="flex flex-col space-y-1 mt-20">
+			<nav @click="mobileOpen = false" class="flex flex-col space-y-1 mt-20">
 
 				{!! wp_nav_menu([
 				'theme_location' => 'primary_navigation',
@@ -95,7 +98,7 @@ use App\Walkers\MegaMenuWalker;
 			</nav>
 			@endif
 
-		<!-- 	<div class="mt-8">
+			<!-- 	<div class="mt-8">
 				<a href="#zarejestruj-sie" class="__menu-btn bg-primary-600 !text-white !text-xl rounded-full whitespace-nowrap py-6 px-8 ml-2">
 					Zarejestruj się
 				</a>

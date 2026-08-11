@@ -1,7 +1,8 @@
 @props([
 'href' => null,
 'variant' => 'primary',
-'tag' => null
+'tag' => null,
+'target' => null
 ])
 
 @php
@@ -10,7 +11,7 @@ $classes = 'btn btn-' . $variant;
 @endphp
 
 @if ($tag === 'a')
-<a href="{{ $href }}" {{ $attributes->merge(['class' => $classes]) }}>
+<a href="{{ $href }}" {{ $attributes->merge(['class' => $classes]) }} @if(!empty($target)) target="{{ $target }}" @endif>
 	{{ $slot }}
 </a>
 @else
