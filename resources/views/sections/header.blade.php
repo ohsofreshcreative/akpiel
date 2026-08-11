@@ -35,14 +35,15 @@ use App\Walkers\MegaMenuWalker;
 	</div>
 
 	<!-- Mobile Header Bar -->
-	<div class="flex items-center justify-between p-4 mobile-menu fixed-top lg:hidden gap-20">
-		<a class="brand" href="{{ home_url('/') }}">
+	<div class="flex items-center justify-between p-4 mobile-menu fixed-top lg:hidden gap-2">
 			@if ($logo)
-			<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="relative w-auto h-10 pl-6 max-w-[200px]">
+			<div class="flex gap-2 items-center">
+					<span class=""><a class="brand shrink-0" href="{{ home_url('/') }}"><img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto max-w-[160px]  h-10"></a></span>
+					<img class="relative max-w-25 min-w-25" src="/wp-content/uploads/2026/08/DOIPIP_logo_35lat_przejzroczyste_tlo.png" />
+				</div>
 			@else
 			<span class="text-lg font-bold">{{ $siteName }}</span>
 			@endif
-		</a>
 		<button
 			@click.stop="mobileOpen = !mobileOpen"
 			class="p-2 primary bg-white rounded-md"
@@ -74,7 +75,10 @@ use App\Walkers\MegaMenuWalker;
 		aria-label="Menu mobilne">
 		<div class="p-4 relative z-10">
 			<div class="flex items-center justify-between mb-6">
-				<span class=""><a class="brand shrink-0" href="{{ home_url('/') }}"><img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto max-w-[200px] invert h-12"></a></span>
+				<div class="flex gap-2 items-center">
+					<span class=""><a class="brand shrink-0" href="{{ home_url('/') }}"><img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto max-w-[160px] invert h-10"></a></span>
+					<img class="relative max-w-25 min-w-25" src="/wp-content/uploads/2026/08/DOIPIP_logo_35lat_przejzroczyste_tlo.png" />
+				</div>
 				<button
 					@click="mobileOpen = false"
 					class="p-2 text-white rounded-md">
