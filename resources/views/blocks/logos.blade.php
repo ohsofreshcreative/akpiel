@@ -22,7 +22,7 @@ $sectionClass .= ' ' . $background;
 	<div data-gsap-element="logos" class="__logos grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
 		@foreach ($g_logos['gallery'] as $image)
 		<div class="__logo relative border border-secondary-100 rounded-2xl bg-white flex items-center justify-center h-48 p-8">
-			<img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" class="max-h-20 w-auto">
+			<img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" class="w-full h-full object-contain">
 		</div>
 		@endforeach
 	</div>
