@@ -104,7 +104,7 @@
   --color-muted: var(--color-secondary-500);
   --gradient: linear-gradient(90deg, #97080E 0%, #4B0407 100%);
   --gradient-light: linear-gradient(90deg, #97080E 0%, #4B0407 100%);
-  --gradient-hero: linear-gradient(-90deg, rgba(151, 8, 14, 0) 0%, rgba(75, 4, 7, 1) 70%);
+  --gradient-hero: linear-gradient(-90deg, rgba(151, 8, 14, 1) 0%, rgba(75, 4, 7, 1) 70%);
 
 }
 

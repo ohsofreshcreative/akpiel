@@ -9,13 +9,13 @@ use App\Walkers\MegaMenuWalker;
 	<!-- Desktop Header -->
 	<div class="items-center justify-between hidden h-full py-4 md:px-4 lg:px-12 mx-auto lg:flex">
 		<div class="flex gap-2 items-center">
-			<a class="brand max-w-45 min-w-25" href="{{ home_url('/') }}">
+		<!-- 	<a class="brand max-w-45 min-w-25" href="{{ home_url('/') }}">
 				@if ($logo)
 				<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="relative w-auto h-auto !max-h-14">
 				@else
 				<span class="text-xl font-bold">{{ $siteName }}</span>
 				@endif
-			</a>
+			</a> -->
 			<img class="relative max-w-35 min-w-25" src="/wp-content/uploads/2026/08/DOIPIP_logo_35lat_przejzroczyste_tlo.png" />
 		</div>
 		@if (has_nav_menu('primary_navigation'))
@@ -38,7 +38,7 @@ use App\Walkers\MegaMenuWalker;
 	<div class="flex items-center justify-between p-4 mobile-menu fixed-top lg:hidden gap-2">
 			@if ($logo)
 			<div class="flex gap-2 items-center">
-					<span class=""><a class="brand shrink-0" href="{{ home_url('/') }}"><img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto max-w-[160px]  h-10"></a></span>
+				<!-- 	<span class=""><a class="brand shrink-0" href="{{ home_url('/') }}"><img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto max-w-[160px]  h-10"></a></span> -->
 					<img class="relative max-w-25 min-w-25" src="/wp-content/uploads/2026/08/DOIPIP_logo_35lat_przejzroczyste_tlo.png" />
 				</div>
 			@else

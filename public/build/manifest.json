@@ -22,7 +22,7 @@
     "src": "editor.deps.json"
   },
   "resources/css/app.css": {
-    "file": "assets/app-Byr24_NV.css",
+    "file": "assets/app-DG6R_HPc.css",
     "name": "app",
     "names": [
       "app.css"
@@ -31,7 +31,7 @@
     "isEntry": true
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-Baam-IvF.css",
+    "file": "assets/editor-Rj0OnSdm.css",
     "name": "editor",
     "names": [
       "editor.css"
