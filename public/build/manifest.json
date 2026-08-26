@@ -31,7 +31,7 @@
     "isEntry": true
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-Rj0OnSdm.css",
+    "file": "assets/editor-CWeCshYd.css",
     "name": "editor",
     "names": [
       "editor.css"
@@ -158,7 +158,7 @@
     ]
   },
   "resources/js/editor.js": {
-    "file": "assets/editor-Dqo-zVGR.js",
+    "file": "assets/editor-Diuy2cIM.js",
     "name": "editor",
     "src": "resources/js/editor.js",
     "isEntry": true
