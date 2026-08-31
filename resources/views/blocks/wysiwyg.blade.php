@@ -32,7 +32,7 @@ $sectionClass .= $bgClass[$bg ?? ''] ?? '';
 		</div>
 
 		@if (!empty($g_wysiwyg['button']))
-		<a data-gsap-element="btn" class="main-btn m-btn" href="{{ $g_wysiwyg['button']['url'] }}">{{ $g_wysiwyg['button']['title'] }}</a>
+		<a data-gsap-element="btn" target="_blank" class="main-btn m-btn" href="{{ $g_wysiwyg['button']['url'] }}">{{ $g_wysiwyg['button']['title'] }}</a>
 		@endif
 	</div>
 
